@@ -1,0 +1,29 @@
+modules:
+  hh3c_entity_ext_objects:
+    walk:
+      - 1.3.6.1.2.1.1.2                   # 系统 ID（sysObjectID）
+      - 1.3.6.1.2.1.1.5                   # 系统名称（sysName）
+      - 1.3.6.1.2.1.47.1.1.1.1.12.1       # 设备厂商（entPhysicalMfgName）
+      - 1.3.6.1.2.1.47.1.1.1.1.7.1        # 设备型号（entPhysicalName）
+      - 1.3.6.1.2.1.47.1.1.1.1.11.1       # 设备序列号（entPhysicalSerialNum）
+      - 1.3.6.1.2.1.4.20.1.1              # 管理 IP（ipAdEntAddr）
+      - 1.3.6.1.2.1.2.2.1.3               # 接口类型（ifType）
+      - 1.3.6.1.2.1.2.2.1.6               # 接口 MAC 地址（ifPhysAddress）
+      - 1.3.6.1.2.1.4                     # 路由表
+
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.6   # 使用率（hh3cEntityExtCpuUsage）
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.26  # 平均使用率（hh3cEntityExtCpuAvgUsage）
+
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.10  # 大小（hh3cEntityExtMemSize）
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.23  # 物理大小（hh3cEntityExtPhyMemSize）
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.8   # 使用率（hh3cEntityExtMemUsage）
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.27  # 平均使用率（hh3cEntityExtMemAvgUsage）
+
+      - 1.3.6.1.4.1.25506.2.6.1.1.1.1.12  # 温度（hh3cEntityExtTemperature）
+
+      - 1.3.6.1.2.1.2                     # 接口
+      - 1.3.6.1.4.1.25506.2.40            # H3C 接口
+
+    version: 2
+    auth:
+      community: public

@@ -1,0 +1,10 @@
+agentType: prometheus
+type: exporter
+
+name: h3c_switch_collector_plugin
+version: 1.0.0
+
+category: 网络设备
+params:
+    - exporter_host
+    - exporter_port
