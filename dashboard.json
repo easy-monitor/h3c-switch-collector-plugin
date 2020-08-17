@@ -6,8 +6,8 @@
         "namespace": "resource-monitor._SWITCH",
         "panels": [
             {
-                "brickConf": "{\"brick\":\"chart-v2.gauge-chart\",\"properties\":{\"height\":150,\"data\":[{\"item\":\"CPU使用率\"}],\"yField\":\"percent\",\"gaugeTitle\":\"CPU使用率\",\"thresholdColors\":[{\"value\":50,\"color\":\"#0086FA\"},{\"value\":90,\"color\":\"#FFBF00\"},{\"value\":100,\"color\":\"#F5222D\"}],\"axis\":{\"yAxis\":{\"min\":0,\"max\":100,\"unit\":\"%\",\"precision\":0}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"easyops._SWITCH\",\"statements\":[{\"name\":\"hh3centityextcpuusage\",\"alias\":\"hh3centityextcpuusage\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityextcpuusage\",\"operator\":\"!=\",\"value\":null},{\"name\":\"hh3cEntityExtPhysicalIndex\",\"operator\":\"==\",\"value\":\"8\"},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"data[0].percent\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityextcpuusage\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
-                "height": 6,
+                "brickConf": "{\"brick\":\"chart-v2.gauge-chart\",\"properties\":{\"height\":150,\"data\":[{\"item\":\"CPU使用率\"}],\"yField\":\"percent\",\"gaugeTitle\":\"CPU使用率\",\"thresholdColors\":[{\"value\":50,\"color\":\"#0086FA\"},{\"value\":90,\"color\":\"#FFBF00\"},{\"value\":100,\"color\":\"#F5222D\"}],\"axis\":{\"yAxis\":{\"min\":0,\"max\":100,\"unit\":\"%\",\"precision\":0}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"statements\":[{\"name\":\"hh3centityextcpuusage\",\"alias\":\"hh3centityextcpuusage\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityextcpuusage\",\"operator\":\"!=\",\"value\":null},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"data[0].percent\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityextcpuusage\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "height": 3,
                 "id": "chart-v2.gauge-chart",
                 "links": "[]",
                 "source": "brick",
@@ -17,8 +17,8 @@
                 "y": 0
             },
             {
-                "brickConf": "{\"brick\":\"chart-v2.gauge-chart\",\"properties\":{\"height\":150,\"data\":[{\"item\":\"内存使用率\"}],\"yField\":\"percent\",\"gaugeTitle\":\"内存使用率\",\"thresholdColors\":[{\"value\":50,\"color\":\"#0086FA\"},{\"value\":90,\"color\":\"#FFBF00\"},{\"value\":100,\"color\":\"#F5222D\"}],\"axis\":{\"yAxis\":{\"min\":0,\"max\":100,\"unit\":\"%\",\"precision\":0}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"easyops._SWITCH\",\"statements\":[{\"name\":\"hh3centityextmemusage\",\"alias\":\"hh3centityextmemusage\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityextmemusage\",\"operator\":\"!=\",\"value\":null},{\"name\":\"hh3cEntityExtPhysicalIndex\",\"operator\":\"==\",\"value\":\"8\"},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"data[0].percent\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityextmemusage\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
-                "height": 6,
+                "brickConf": "{\"brick\":\"chart-v2.gauge-chart\",\"properties\":{\"height\":150,\"data\":[{\"item\":\"内存使用率\"}],\"yField\":\"percent\",\"gaugeTitle\":\"内存使用率\",\"thresholdColors\":[{\"value\":50,\"color\":\"#0086FA\"},{\"value\":90,\"color\":\"#FFBF00\"},{\"value\":100,\"color\":\"#F5222D\"}],\"axis\":{\"yAxis\":{\"min\":0,\"max\":100,\"unit\":\"%\",\"precision\":0}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"statements\":[{\"name\":\"hh3centityextmemusage\",\"alias\":\"hh3centityextmemusage\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityextmemusage\",\"operator\":\"!=\",\"value\":null},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"data[0].percent\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityextmemusage\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "height": 3,
                 "id": "chart-v2.gauge-chart",
                 "links": "[]",
                 "source": "brick",
@@ -28,7 +28,7 @@
                 "y": 0
             },
             {
-                "brickConf": "{\"brick\":\"general-charts.statistic-item\",\"properties\":{\"showCard\":false},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"easyops._SWITCH\",\"statements\":[{\"name\":\"hh3centityexttemperature\",\"alias\":\"hh3centityexttemperature\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityexttemperature\",\"operator\":\"!=\",\"value\":null},{\"name\":\"hh3cEntityExtPhysicalIndex\",\"operator\":\"==\",\"value\":\"8\"},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"text\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityexttemperature\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "brickConf": "{\"brick\":\"general-charts.statistic-item\",\"properties\":{\"showCard\":false},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-select\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"statements\":[{\"name\":\"hh3centityexttemperature\",\"alias\":\"hh3centityexttemperature\"},{\"name\":\"time\"}],\"filters\":[{\"name\":\"time\",\"operator\":\">=\",\"value\":\"now-5m\"},{\"name\":\"hh3centityexttemperature\",\"operator\":\"!=\",\"value\":null},{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${query.instanceId|string}\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":1}}],\"transform\":{\"text\":\"<% _.get(DATA.list, \\\"[0][\\\\\\\"hh3centityexttemperature\\\\\\\"]\\\") %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
                 "height": 4,
                 "id": "chart-v2.gauge-chart",
                 "links": "[]",
@@ -37,9 +37,50 @@
                 "width": 8,
                 "x": 16,
                 "y": 0
+            },
+            {
+                "brickConf": "{\"brick\":\"presentational-bricks.brick-table\",\"properties\":{\"showCard\":false,\"rowKey\":\"time\",\"columns\":[{\"title\":\"时间\",\"dataIndex\":\"time\",\"key\":\"time\"},{\"title\":\"接口\",\"dataIndex\":\"ifIndex\",\"key\":\"ifIndex\"},{\"title\":\"接口类型\",\"dataIndex\":\"iftype\",\"key\":\"iftype\"},{\"title\":\"接口速率\",\"dataIndex\":\"ifspeed\",\"key\":\"ifspeed\"},{\"title\":\"管理状态\",\"dataIndex\":\"ifadminstatus\",\"key\":\"ifadminstatus\",\"useBrick\":{\"brick\":\"presentational-bricks.brick-value-mapping\",\"transform\":{\"value\":\"@{cellData}\"},\"properties\":{\"mapping\":{\"1\":{\"text\":\"开启\",\"color\":\"green\"},\"2\":{\"text\":\"关闭\",\"color\":\"red\"}}}}},{\"title\":\"运行状态\",\"dataIndex\":\"ifoperstatus\",\"key\":\"ifoperstatus\",\"useBrick\":{\"brick\":\"presentational-bricks.brick-value-mapping\",\"transform\":{\"value\":\"@{cellData}\"},\"properties\":{\"mapping\":{\"1\":{\"text\":\"开启\",\"color\":\"green\"},\"2\":{\"text\":\"关闭\",\"color\":\"red\"}}}}},{\"title\":\"接口 MTU\",\"dataIndex\":\"ifmtu\",\"key\":\"ifmtu\"}],\"configProps\":{\"pagination\":false}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-query\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"dims\":[\"time(1m)\",\"ifIndex\"],\"measures\":[{\"name\":\"iftype\",\"function\":{\"expression\":\"last\",\"args\":[\"iftype\"]}},{\"name\":\"ifspeed\",\"function\":{\"expression\":\"last\",\"args\":[\"ifspeed\"]}},{\"name\":\"ifadminstatus\",\"function\":{\"expression\":\"last\",\"args\":[\"ifadminstatus\"]}},{\"name\":\"ifoperstatus\",\"function\":{\"expression\":\"last\",\"args\":[\"ifoperstatus\"]}},{\"name\":\"ifmtu\",\"function\":{\"expression\":\"last\",\"args\":[\"ifmtu\"]}}],\"filters\":[{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${QUERY.instanceId|string}\"},{\"name\":\"time\",\"operator\":\">=\",\"value\":\"${QUERY.from=\\\"now-1h\\\"|string}\"},{\"name\":\"ifIndex\",\"operator\":\"!=\",\"value\":\"null\"},{\"name\":\"time\",\"operator\":\"<=\",\"value\":\"<% parseInt(+moment() / 1000) %>\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}],\"limit\":{\"limit\":10,\"offset\":0}}],\"transform\":{\"dataSource\":\"<% { ...DATA, list: DATA.list.map(row => ({ ...row, time: moment(row.time * 1000).format(\\\"YYYY-MM-DD HH:mm:ss\\\"), ifspeed: PIPES.unitFormat(row.ifspeed, \\\"bibytes\\\", 0), ifmtu: PIPES.unitFormat(row.ifmtu, \\\"bytes\\\", 0) })) } %>\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "height": 17,
+                "id": "presentational-bricks.brick-table",
+                "links": "[]",
+                "source": "brick",
+                "title": "接口状态",
+                "width": 24,
+                "x": 0,
+                "y": 4
+            },
+            {
+                "brickConf": "{\"brick\":\"chart-v2.time-series-chart\",\"properties\":{\"height\":230,\"xField\":\"time\",\"yFields\":[\"ifinoctets\",\"ifoutoctets\"],\"axis\":{\"yAxis\":{\"min\":0,\"unit\":\"bps\"}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-query\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"dims\":[\"time(1m)\"],\"measures\":[{\"name\":\"ifinoctets\",\"function\":{\"expression\":\"avg\",\"args\":[\"ifinoctets\"]}},{\"name\":\"ifoutoctets\",\"function\":{\"expression\":\"avg\",\"args\":[\"ifoutoctets\"]}}],\"filters\":[{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${QUERY.instanceId|string}\"},{\"name\":\"time\",\"operator\":\">=\",\"value\":\"${QUERY.from=\\\"now-1h\\\"|string}\"},{\"name\":\"time\",\"operator\":\"<=\",\"value\":\"<% parseInt(+moment() / 1000) %>\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}]}],\"transform\":{\"data\":\"@{list}\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "height": 8,
+                "id": "chart-v2.time-series-chart",
+                "links": "[]",
+                "source": "brick",
+                "title": "接口流量",
+                "width": 12,
+                "x": 0,
+                "y": 21
+            },
+            {
+                "brickConf": "{\"brick\":\"chart-v2.time-series-chart\",\"properties\":{\"height\":230,\"xField\":\"time\",\"yFields\":[\"ifinucastpkts\",\"ifoutucastpkts\",\"ifinnucastpkts\"],\"axis\":{\"yAxis\":{\"min\":0,\"unit\":\"bps\"}}},\"lifeCycle\":{\"useResolves\":[{\"provider\":\"providers-of-data-exchange.olap-api-query\",\"args\":[{\"model\":\"<% \\\"easyops.\\\" + PARAMS.get(\\\"objectId\\\") %>\",\"dims\":[\"time(1m)\"],\"measures\":[{\"name\":\"ifinucastpkts\",\"function\":{\"expression\":\"avg\",\"args\":[\"ifinucastpkts\"]}},{\"name\":\"ifoutucastpkts\",\"function\":{\"expression\":\"avg\",\"args\":[\"ifoutucastpkts\"]}},{\"name\":\"ifinnucastpkts\",\"function\":{\"expression\":\"avg\",\"args\":[\"ifinnucastpkts\"]}}],\"filters\":[{\"name\":\"instanceId\",\"operator\":\"==\",\"value\":\"${QUERY.instanceId|string}\"},{\"name\":\"time\",\"operator\":\">=\",\"value\":\"${QUERY.from=\\\"now-1h\\\"|string}\"},{\"name\":\"time\",\"operator\":\"<=\",\"value\":\"<% parseInt(+moment() / 1000) %>\"}],\"order\":[{\"name\":\"time\",\"order\":\"desc\"}]}],\"transform\":{\"data\":\"@{list}\"},\"onReject\":{\"transform\":{\"error\":\"<% DATA.message || '接口请求错误' %>\"}}}]}}",
+                "height": 8,
+                "id": "chart-v2.time-series-chart",
+                "links": "[]",
+                "source": "brick",
+                "title": "接口包速率",
+                "width": 12,
+                "x": 12,
+                "y": 21
             }
         ],
         "variables": [
+            {
+                "id": "objectId",
+                "multiSelect": false,
+                "name": "模型 ID",
+                "selectorDefaultValue": "_SWITCH",
+                "showSelector": false,
+                "type": "cmdb-model"
+            },
             {
                 "id": "instanceId",
                 "multiSelect": false,
