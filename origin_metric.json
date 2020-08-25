@@ -1,2853 +1,2750 @@
 [
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's ipRouteProto value - 1.3.6.1.2.1.4.21.1.13",
-        "key": "ipRouteInfo",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteInfo",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
+            }, 
+            {
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ipRouteInfo"
+            }
+        ], 
+        "help": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's ipRouteProto value - 1.3.6.1.2.1.4.21.1.13", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0.0",
-                "name": "ipRouteInfo",
-                "readOnly": false,
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ipRouteInfo", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteInfo", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
-            },
             {
-                "default": "0.0",
-                "name": "ipRouteInfo",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Sampling interval for in/out flow of interface - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.1",
-        "key": "hh3cIfStatFlowInterval",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowInterval",
+        ], 
+        "help": "Sampling interval for in/out flow of interface - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.1", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowInterval", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "H3C", 
+                "readOnly": false, 
+                "name": "sysName"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An administratively-assigned name for this managed node - 1.3.6.1.2.1.1.5",
-        "key": "sysName",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_sysName",
+        ], 
+        "help": "An administratively-assigned name for this managed node - 1.3.6.1.2.1.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "H3C",
-                "name": "sysName",
-                "readOnly": false,
+                "default": "H3C", 
+                "readOnly": false, 
+                "name": "sysName", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "sysName", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "H3C",
-                "name": "sysName",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.5",
-        "key": "ipRouteMetric3",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMetric3",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMetric3", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.2.2.1.12",
-        "key": "ifInNUcastPkts",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInNUcastPkts",
+        ], 
+        "help": "The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.2.2.1.12", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInNUcastPkts", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipRouteMask"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipRouteDest field - 1.3.6.1.2.1.4.21.1.11",
-        "key": "ipRouteMask",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMask",
+        ], 
+        "help": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipRouteDest field - 1.3.6.1.2.1.4.21.1.11", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipRouteMask", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMask", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipRouteMask",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of outbound packets which were chosen to be discarded even though no errors had been detected to prevent their being transmitted - 1.3.6.1.2.1.2.2.1.19",
-        "key": "ifOutDiscards",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifOutDiscards",
+        ], 
+        "help": "The number of outbound packets which were chosen to be discarded even though no errors had been detected to prevent their being transmitted - 1.3.6.1.2.1.2.2.1.19", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
-            }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutDiscards", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of locally-addressed datagrams received successfully but discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.4.7",
-        "key": "ipInUnknownProtos",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInUnknownProtos",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of locally-addressed datagrams received successfully but discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.4.7", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInUnknownProtos", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of input datagrams discarded due to errors in their IPv4 headers, including bad checksums, version number mismatch, other format errors, time-to-live exceeded, errors discovered in processing their IPv4 options, etc - 1.3.6.1.2.1.4.4",
-        "key": "ipInHdrErrors",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInHdrErrors",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of input datagrams discarded due to errors in their IPv4 headers, including bad checksums, version number mismatch, other format errors, time-to-live exceeded, errors discovered in processing their IPv4 options, etc - 1.3.6.1.2.1.4.4", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInHdrErrors", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 datagram fragments that have been generated as a result of fragmentation at this entity - 1.3.6.1.2.1.4.19",
-        "key": "ipFragCreates",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipFragCreates",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 datagram fragments that have been generated as a result of fragmentation at this entity - 1.3.6.1.2.1.4.19", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipFragCreates", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The size of the largest packet which can be sent/received on the interface, specified in octets - 1.3.6.1.2.1.2.2.1.4",
-        "key": "ifMtu",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifMtu",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }
+        ], 
+        "help": "The size of the largest packet which can be sent/received on the interface, specified in octets - 1.3.6.1.2.1.2.2.1.4", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifMtu", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The row status variable, used according to row installation and removal conventions. - 1.3.6.1.2.1.4.24.4.1.16",
-        "key": "ipCidrRouteStatus",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteStatus",
+        ], 
+        "help": "The row status variable, used according to row installation and removal conventions. - 1.3.6.1.2.1.4.24.4.1.16", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteStatus", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cIfLinkModeIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The current link mode of the interface - 1.3.6.1.4.1.25506.2.40.2.2.3.1.2",
-        "key": "hh3cIfLinkMode",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfLinkMode",
+        ], 
+        "help": "The current link mode of the interface - 1.3.6.1.4.1.25506.2.40.2.2.3.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cIfLinkModeIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cIfLinkModeIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfLinkMode", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "hh3cIfLinkModeIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "For packet-oriented interfaces, the number of packets received via the interface which were discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.2.2.1.15",
-        "key": "ifInUnknownProtos",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInUnknownProtos",
+        ], 
+        "help": "For packet-oriented interfaces, the number of packets received via the interface which were discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.2.2.1.15", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInUnknownProtos", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "PDUs returned from walk.",
-        "key": "snmp_scrape_pdus_returned",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_snmp_scrape_pdus_returned",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "PDUs returned from walk.", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "snmp_scrape_pdus_returned", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 fragments received which needed to be reassembled at this entity - 1.3.6.1.2.1.4.14",
-        "key": "ipReasmReqds",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipReasmReqds",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 fragments received which needed to be reassembled at this entity - 1.3.6.1.2.1.4.14", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipReasmReqds", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of octets transmitted out of the interface, including framing characters - 1.3.6.1.2.1.2.2.1.16",
-        "key": "ifOutOctets",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifOutOctets",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
-                "valueType": "string"
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "tagDefine": [
+        ], 
+        "help": "The total number of octets transmitted out of the interface, including framing characters - 1.3.6.1.2.1.2.2.1.16", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutOctets", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 datagrams successfully re-assembled - 1.3.6.1.2.1.4.15",
-        "key": "ipReasmOKs",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipReasmOKs",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 datagrams successfully re-assembled - 1.3.6.1.2.1.4.15", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipReasmOKs", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The memory usage for the entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.8",
-        "key": "hh3cEntityExtMemUsage",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cEntityExtMemUsage",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex"
+            }
+        ], 
+        "help": "The memory usage for the entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.8", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cEntityExtMemUsage", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of seconds since this route was last updated or otherwise determined to be correct - 1.3.6.1.2.1.4.21.1.10",
-        "key": "ipRouteAge",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteAge",
+        ], 
+        "help": "The number of seconds since this route was last updated or otherwise determined to be correct - 1.3.6.1.2.1.4.21.1.10", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteAge", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The value of sysUpTime at the time the interface entered its current operational state - 1.3.6.1.2.1.2.2.1.9",
-        "key": "ifLastChange",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifLastChange",
+        ], 
+        "help": "The value of sysUpTime at the time the interface entered its current operational state - 1.3.6.1.2.1.2.2.1.9", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifLastChange", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The type of route - 1.3.6.1.2.1.4.21.1.8",
-        "key": "ipRouteType",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteType",
+        ], 
+        "help": "The type of route - 1.3.6.1.2.1.4.21.1.8", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteType", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 datagrams discarded because no route could be found to transmit them to their destination - 1.3.6.1.2.1.4.12",
-        "key": "ipOutNoRoutes",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipOutNoRoutes",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 datagrams discarded because no route could be found to transmit them to their destination - 1.3.6.1.2.1.4.12", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipOutNoRoutes", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of seconds since this route was last updated or otherwise determined to be correct - 1.3.6.1.2.1.4.24.4.1.8",
-        "key": "ipCidrRouteAge",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteAge",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
+            }
+        ], 
+        "help": "The number of seconds since this route was last updated or otherwise determined to be correct - 1.3.6.1.2.1.4.24.4.1.8", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteAge", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.6",
-        "key": "ipRouteMetric4",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMetric4",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.6", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMetric4", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "For packet-oriented interfaces, the number of outbound packets that could not be transmitted because of errors - 1.3.6.1.2.1.2.2.1.20",
-        "key": "ifOutErrors",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifOutErrors",
+        ], 
+        "help": "For packet-oriented interfaces, the number of outbound packets that could not be transmitted because of errors - 1.3.6.1.2.1.2.2.1.20", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutErrors", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex"
+            }, 
+            {
+                "default": "210235A0HVB10A000547", 
+                "readOnly": false, 
+                "name": "entPhysicalSerialNum"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The vendor-specific serial number string for the physical entity - 1.3.6.1.2.1.47.1.1.1.1.11",
-        "key": "entPhysicalSerialNum",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_entPhysicalSerialNum",
+        ], 
+        "help": "The vendor-specific serial number string for the physical entity - 1.3.6.1.2.1.47.1.1.1.1.11", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "210235A0HVB10A000547",
-                "name": "entPhysicalSerialNum",
-                "readOnly": false,
+                "default": "210235A0HVB10A000547", 
+                "readOnly": false, 
+                "name": "entPhysicalSerialNum", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false
-            },
-            {
-                "default": "210235A0HVB10A000547",
-                "name": "entPhysicalSerialNum",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "entPhysicalSerialNum", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The default value inserted into the Time-To-Live field of the IPv4 header of datagrams originated at this entity, whenever a TTL value is not supplied by the transport layer protocol - 1.3.6.1.2.1.4.2",
-        "key": "ipDefaultTTL",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipDefaultTTL",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The default value inserted into the Time-To-Live field of the IPv4 header of datagrams originated at this entity, whenever a TTL value is not supplied by the transport layer protocol - 1.3.6.1.2.1.4.2", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipDefaultTTL", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of octets received on the interface, including framing characters - 1.3.6.1.2.1.2.2.1.10",
-        "key": "ifInOctets",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInOctets",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }
+        ], 
+        "help": "The total number of octets received on the interface, including framing characters - 1.3.6.1.2.1.2.2.1.10", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInOctets", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The length of the output packet queue (in packets). - 1.3.6.1.2.1.2.2.1.21",
-        "key": "ifOutQLen",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifOutQLen",
+        ], 
+        "help": "The length of the output packet queue (in packets). - 1.3.6.1.2.1.2.2.1.21", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutQLen", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipAdEntNetMask"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The subnet mask associated with the IPv4 address of this entry - 1.3.6.1.2.1.4.20.1.3",
-        "key": "ipAdEntNetMask",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipAdEntNetMask",
+        ], 
+        "help": "The subnet mask associated with the IPv4 address of this entry - 1.3.6.1.2.1.4.20.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipAdEntNetMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipAdEntNetMask", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipAdEntNetMask", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipAdEntNetMask",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "In bytes in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.6",
-        "key": "hh3cIfStatFlowInBytes",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowInBytes",
+        ], 
+        "help": "In bytes in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.6", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowInBytes", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "A unique value, greater than zero, for each interface - 1.3.6.1.2.1.2.2.1.1",
-        "key": "ifIndex",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifIndex",
+        ], 
+        "help": "A unique value, greater than zero, for each interface - 1.3.6.1.2.1.2.2.1.1", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifIndex", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipRouteNextHop"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The IP address of the next hop of this route - 1.3.6.1.2.1.4.21.1.7",
-        "key": "ipRouteNextHop",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteNextHop",
+        ], 
+        "help": "The IP address of the next hop of this route - 1.3.6.1.2.1.4.21.1.7", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipRouteNextHop", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteNextHop", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipRouteNextHop",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An estimate of the interface's current bandwidth in bits per second - 1.3.6.1.2.1.2.2.1.5",
-        "key": "ifSpeed",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifSpeed",
+        ], 
+        "help": "An estimate of the interface's current bandwidth in bits per second - 1.3.6.1.2.1.2.2.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifSpeed", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of output IPv4 datagrams for which no problem was encountered to prevent their transmission to their destination, but which were discarded (e.g., for lack of buffer space) - 1.3.6.1.2.1.4.11",
-        "key": "ipOutDiscards",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipOutDiscards",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of output IPv4 datagrams for which no problem was encountered to prevent their transmission to their destination, but which were discarded (e.g., for lack of buffer space) - 1.3.6.1.2.1.4.11", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipOutDiscards", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The destination IP address of this route - 1.3.6.1.2.1.4.21.1.1",
-        "key": "ipRouteDest",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteDest",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
-                "valueType": "string"
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "tagDefine": [
+        ], 
+        "help": "The destination IP address of this route - 1.3.6.1.2.1.4.21.1.1", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteDest", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of current ipCidrRouteTable entries that are not invalid - 1.3.6.1.2.1.4.24.3",
-        "key": "ipCidrRouteNumber",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteNumber",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of current ipCidrRouteTable entries that are not invalid - 1.3.6.1.2.1.4.24.3", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteNumber", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The value of the least-significant bit in the IPv4 broadcast address used for sending datagrams on the (logical) interface associated with the IPv4 address of this entry - 1.3.6.1.2.1.4.20.1.4",
-        "key": "ipAdEntBcastAddr",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipAdEntBcastAddr",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false,
-                "valueType": "string"
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr"
             }
-        ],
-        "tagDefine": [
+        ], 
+        "help": "The value of the least-significant bit in the IPv4 broadcast address used for sending datagrams on the (logical) interface associated with the IPv4 address of this entry - 1.3.6.1.2.1.4.20.1.4", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipAdEntBcastAddr", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of input IPv4 datagrams for which no problems were encountered to prevent their continued processing, but which were discarded (e.g., for lack of buffer space) - 1.3.6.1.2.1.4.8",
-        "key": "ipInDiscards",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInDiscards",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of input IPv4 datagrams for which no problems were encountered to prevent their continued processing, but which were discarded (e.g., for lack of buffer space) - 1.3.6.1.2.1.4.8", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInDiscards", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of input datagrams successfully delivered to IPv4 user-protocols (including ICMP) - 1.3.6.1.2.1.4.9",
-        "key": "ipInDelivers",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInDelivers",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The total number of input datagrams successfully delivered to IPv4 user-protocols (including ICMP) - 1.3.6.1.2.1.4.9", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInDelivers", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The primary routing metric for this route - 1.3.6.1.2.1.4.21.1.3",
-        "key": "ipRouteMetric1",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMetric1",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
+            }
+        ], 
+        "help": "The primary routing metric for this route - 1.3.6.1.2.1.4.21.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMetric1", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex"
+            }, 
+            {
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The interface on which this entry's equivalence is effective - 1.3.6.1.2.1.4.22.1.1",
-        "key": "ipNetToMediaIfIndex",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipNetToMediaIfIndex",
+        ], 
+        "help": "The interface on which this entry's equivalence is effective - 1.3.6.1.2.1.4.22.1.1", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false,
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false,
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipNetToMediaIfIndex", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of packets that higher-level protocols requested be transmitted, and which were not addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.17",
-        "key": "ifOutUcastPkts",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifOutUcastPkts",
+        ], 
+        "help": "The total number of packets that higher-level protocols requested be transmitted, and which were not addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.17", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutUcastPkts", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "On remote routes, the address of the next system en route; Otherwise, 0.0.0.0. - 1.3.6.1.2.1.4.24.4.1.4",
-        "key": "ipCidrRouteNextHop",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteNextHop",
+        ], 
+        "help": "On remote routes, the address of the next system en route; Otherwise, 0.0.0.0. - 1.3.6.1.2.1.4.24.4.1.4", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteNextHop", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The size of the largest IPv4 datagram which this entity can re-assemble from incoming IPv4 fragmented datagrams received on this interface. - 1.3.6.1.2.1.4.20.1.5",
-        "key": "ipAdEntReasmMaxSize",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipAdEntReasmMaxSize",
+        ], 
+        "help": "The size of the largest IPv4 datagram which this entity can re-assemble from incoming IPv4 fragmented datagrams received on this interface. - 1.3.6.1.2.1.4.20.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipAdEntReasmMaxSize", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.14",
-        "key": "ipCidrRouteMetric4",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMetric4",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.14", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMetric4", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of input datagrams received from interfaces, including those received in error - 1.3.6.1.2.1.4.3",
-        "key": "ipInReceives",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInReceives",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The total number of input datagrams received from interfaces, including those received in error - 1.3.6.1.2.1.4.3", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInReceives", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The temperature for the entity. - 1.3.6.1.4.1.25506.2.6.1.1.1.1.12",
-        "key": "hh3cEntityExtTemperature",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cEntityExtTemperature",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false,
-                "valueType": "string"
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex"
             }
-        ],
-        "tagDefine": [
+        ], 
+        "help": "The temperature for the entity. - 1.3.6.1.4.1.25506.2.6.1.1.1.1.12", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cEntityExtTemperature", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of input datagrams for which this entity was not their final IPv4 destination, as a result of which an attempt was made to find a route to forward them to that final destination - 1.3.6.1.2.1.4.6",
-        "key": "ipForwDatagrams",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipForwDatagrams",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of input datagrams for which this entity was not their final IPv4 destination, as a result of which an attempt was made to find a route to forward them to that final destination - 1.3.6.1.2.1.4.6", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipForwDatagrams", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "A reference to MIB definitions specific to the particular routing protocol that is responsible for this route, as determined by the value specified in the route's ipCidrRouteProto value - 1.3.6.1.2.1.4.24.4.1.9",
-        "key": "ipCidrRouteInfo",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteInfo",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteInfo"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
+            }
+        ], 
+        "help": "A reference to MIB definitions specific to the particular routing protocol that is responsible for this route, as determined by the value specified in the route's ipCidrRouteProto value - 1.3.6.1.2.1.4.24.4.1.9", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0.0",
-                "name": "ipCidrRouteInfo",
-                "readOnly": false,
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteInfo", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteInfo", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
             {
-                "default": "0.0",
-                "name": "ipCidrRouteInfo",
-                "readOnly": false
-            },
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.15",
-        "key": "ipCidrRouteMetric5",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMetric5",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.15", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMetric5", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipCidrRouteDest field - 1.3.6.1.2.1.4.24.4.1.2",
-        "key": "ipCidrRouteMask",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMask",
+        ], 
+        "help": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipCidrRouteDest field - 1.3.6.1.2.1.4.24.4.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMask", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
+        "tagDefine": [], 
+        "help": "Time SNMP walk/bulkwalk took.", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "snmp_scrape_walk_duration_seconds", 
+        "metric_type": "gauge", 
+        "unit": "seconds"
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Time SNMP walk/bulkwalk took.",
-        "key": "snmp_scrape_walk_duration_seconds",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_snmp_scrape_walk_duration_seconds",
-        "unit": "seconds",
-        "paramDefine": [],
-        "tagDefine": []
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The type of route - 1.3.6.1.2.1.4.24.4.1.6",
-        "key": "ipCidrRouteType",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteType",
+        ], 
+        "help": "The type of route - 1.3.6.1.2.1.4.24.4.1.6", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteType", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The IpAddress corresponding to the media-dependent `physical' address - 1.3.6.1.2.1.4.22.1.3",
-        "key": "ipNetToMediaNetAddress",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipNetToMediaNetAddress",
+        ], 
+        "help": "The IpAddress corresponding to the media-dependent `physical' address - 1.3.6.1.2.1.4.22.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false,
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false,
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipNetToMediaNetAddress", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "For packet-oriented interfaces, the number of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.14",
-        "key": "ifInErrors",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInErrors",
+        ], 
+        "help": "For packet-oriented interfaces, the number of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.14", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInErrors", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The primary routing metric for this route - 1.3.6.1.2.1.4.24.4.1.11",
-        "key": "ipCidrRouteMetric1",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMetric1",
+        ], 
+        "help": "The primary routing metric for this route - 1.3.6.1.2.1.4.24.4.1.11", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMetric1", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
+        "tagDefine": [], 
+        "help": "The number of routing entries which were chosen to be discarded even though they are valid - 1.3.6.1.2.1.4.23", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipRoutingDiscards", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
+                "default": "GigabitEthernet1/0/1", 
+                "readOnly": false, 
+                "name": "ifDescr"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }
+        ], 
+        "help": "A textual string containing information about the interface - 1.3.6.1.2.1.2.2.1.2", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
+                "default": "GigabitEthernet1/0/1", 
+                "readOnly": false, 
+                "name": "ifDescr", 
+                "valueType": "string"
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifDescr", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of routing entries which were chosen to be discarded even though they are valid - 1.3.6.1.2.1.4.23",
-        "key": "ipRoutingDiscards",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipRoutingDiscards",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of failures detected by the IPv4 re-assembly algorithm (for whatever reason: timed out, errors, etc) - 1.3.6.1.2.1.4.16", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipReasmFails", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "A textual string containing information about the interface - 1.3.6.1.2.1.2.2.1.2",
-        "key": "ifDescr",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifDescr",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "GigabitEthernet1/0/1",
-                "name": "ifDescr",
-                "readOnly": false,
-                "valueType": "string"
-            },
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
-                "valueType": "string"
-            }
-        ],
-        "tagDefine": [
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "GigabitEthernet1/0/1",
-                "name": "ifDescr",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of failures detected by the IPv4 re-assembly algorithm (for whatever reason: timed out, errors, etc) - 1.3.6.1.2.1.4.16",
-        "key": "ipReasmFails",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipReasmFails",
-        "paramDefine": [],
-        "tagDefine": [],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.13",
-        "key": "ipCidrRouteMetric3",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMetric3",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.13", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMetric3", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cIfLinkModeIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Whether the interface supports link mode switching - 1.3.6.1.4.1.25506.2.40.2.2.3.1.3",
-        "key": "hh3cIfLinkModeSwitchSupport",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfLinkModeSwitchSupport",
+        ], 
+        "help": "Whether the interface supports link mode switching - 1.3.6.1.4.1.25506.2.40.2.2.3.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cIfLinkModeIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cIfLinkModeIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfLinkModeSwitchSupport", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "hh3cIfLinkModeIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The type of interface - 1.3.6.1.2.1.2.2.1.3",
-        "key": "ifType",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifType",
+        ], 
+        "help": "The type of interface - 1.3.6.1.2.1.2.2.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
-            }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifType", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The indication of whether this entity is acting as an IPv4 router in respect to the forwarding of datagrams received by, but not addressed to, this entity - 1.3.6.1.2.1.4.1",
-        "key": "ipForwarding",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipForwarding",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The indication of whether this entity is acting as an IPv4 router in respect to the forwarding of datagrams received by, but not addressed to, this entity - 1.3.6.1.2.1.4.1", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipForwarding", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The type of mapping - 1.3.6.1.2.1.4.22.1.4",
-        "key": "ipNetToMediaType",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipNetToMediaType",
+        "tagDefine": [
+            {
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex"
+            }, 
+            {
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress"
+            }
+        ], 
+        "help": "The type of mapping - 1.3.6.1.2.1.4.22.1.4", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false,
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false,
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipNetToMediaType", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The ifIndex value that identifies the local interface through which the next hop of this route should be reached. - 1.3.6.1.2.1.4.24.4.1.5",
-        "key": "ipCidrRouteIfIndex",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteIfIndex",
+        ], 
+        "help": "The ifIndex value that identifies the local interface through which the next hop of this route should be reached. - 1.3.6.1.2.1.4.24.4.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteIfIndex", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "H3C", 
+                "readOnly": false, 
+                "name": "entPhysicalMfgName"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The name of the manufacturer of this physical component - 1.3.6.1.2.1.47.1.1.1.1.12",
-        "key": "entPhysicalMfgName",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_entPhysicalMfgName",
+        ], 
+        "help": "The name of the manufacturer of this physical component - 1.3.6.1.2.1.47.1.1.1.1.12", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "H3C",
-                "name": "entPhysicalMfgName",
-                "readOnly": false,
+                "default": "H3C", 
+                "readOnly": false, 
+                "name": "entPhysicalMfgName", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "entPhysicalMfgName", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false
-            },
-            {
-                "default": "H3C",
-                "name": "entPhysicalMfgName",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The index value which uniquely identifies the local interface through which the next hop of this route should be reached - 1.3.6.1.2.1.4.21.1.2",
-        "key": "ipRouteIfIndex",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteIfIndex",
+        ], 
+        "help": "The index value which uniquely identifies the local interface through which the next hop of this route should be reached - 1.3.6.1.2.1.4.21.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteIfIndex", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of IPv4 datagrams which local IPv4 user protocols (including ICMP) supplied to IPv4 in requests for transmission - 1.3.6.1.2.1.4.10",
-        "key": "ipOutRequests",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipOutRequests",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The total number of IPv4 datagrams which local IPv4 user protocols (including ICMP) supplied to IPv4 in requests for transmission - 1.3.6.1.2.1.4.10", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipOutRequests", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 datagrams that have been discarded because they needed to be fragmented at this entity but could not be, e.g., because their Don't Fragment flag was set - 1.3.6.1.2.1.4.18",
-        "key": "ipFragFails",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipFragFails",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 datagrams that have been discarded because they needed to be fragmented at this entity but could not be, e.g., because their Don't Fragment flag was set - 1.3.6.1.2.1.4.18", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipFragFails", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The destination IP address of this route - 1.3.6.1.2.1.4.24.4.1.1",
-        "key": "ipCidrRouteDest",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteDest",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
+            }
+        ], 
+        "help": "The destination IP address of this route - 1.3.6.1.2.1.4.24.4.1.1", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteDest", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.18",
-        "key": "ifOutNUcastPkts",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifOutNUcastPkts",
+        ], 
+        "help": "The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.18", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOutNUcastPkts", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The IPv4 address to which this entry's addressing information pertains. - 1.3.6.1.2.1.4.20.1.1",
-        "key": "ipAdEntAddr",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipAdEntAddr",
+        ], 
+        "help": "The IPv4 address to which this entry's addressing information pertains. - 1.3.6.1.2.1.4.20.1.1", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipAdEntAddr", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were not addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.2.2.1.11",
-        "key": "ifInUcastPkts",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInUcastPkts",
+        ], 
+        "help": "The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were not addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.2.2.1.11", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInUcastPkts", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1.3.6.1.4.1.25506.1.619", 
+                "readOnly": false, 
+                "name": "sysObjectID"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The vendor's authoritative identification of the network management subsystem contained in the entity - 1.3.6.1.2.1.1.2",
-        "key": "sysObjectID",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_sysObjectID",
+        ], 
+        "help": "The vendor's authoritative identification of the network management subsystem contained in the entity - 1.3.6.1.2.1.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1.3.6.1.4.1.25506.1.619",
-                "name": "sysObjectID",
-                "readOnly": false,
+                "default": "1.3.6.1.4.1.25506.1.619", 
+                "readOnly": false, 
+                "name": "sysObjectID", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1.3.6.1.4.1.25506.1.619",
-                "name": "sysObjectID",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "sysObjectID", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of input datagrams discarded because the IPv4 address in their IPv4 header's destination field was not a valid address to be received at this entity - 1.3.6.1.2.1.4.5",
-        "key": "ipInAddrErrors",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipInAddrErrors",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of input datagrams discarded because the IPv4 address in their IPv4 header's destination field was not a valid address to be received at this entity - 1.3.6.1.2.1.4.5", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipInAddrErrors", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The current operational state of the interface - 1.3.6.1.2.1.2.2.1.8",
-        "key": "ifOperStatus",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifOperStatus",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }
+        ], 
+        "help": "The current operational state of the interface - 1.3.6.1.2.1.2.2.1.8", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifOperStatus", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The size of memory for the entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.10",
-        "key": "hh3cEntityExtMemSize",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cEntityExtMemSize",
+        ], 
+        "help": "The size of memory for the entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.10", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cEntityExtMemSize", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
+            {
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The routing mechanism via which this route was learned - 1.3.6.1.2.1.4.24.4.1.7",
-        "key": "ipCidrRouteProto",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteProto",
+        ], 
+        "help": "The routing mechanism via which this route was learned - 1.3.6.1.2.1.4.24.4.1.7", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteProto", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The policy specifier is the IP TOS Field - 1.3.6.1.2.1.4.24.4.1.3",
-        "key": "ipCidrRouteTos",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteTos",
+        ], 
+        "help": "The policy specifier is the IP TOS Field - 1.3.6.1.2.1.4.24.4.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteTos", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The CPU usage for this entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.6",
-        "key": "hh3cEntityExtCpuUsage",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cEntityExtCpuUsage",
+        ], 
+        "help": "The CPU usage for this entity - 1.3.6.1.4.1.25506.2.6.1.1.1.1.6", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "hh3cEntityExtPhysicalIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cEntityExtCpuUsage", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "hh3cEntityExtPhysicalIndex",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The index value which uniquely identifies the interface to which this entry is applicable - 1.3.6.1.2.1.4.20.1.2",
-        "key": "ipAdEntIfIndex",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipAdEntIfIndex",
+        ], 
+        "help": "The index value which uniquely identifies the interface to which this entry is applicable - 1.3.6.1.2.1.4.20.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipAdEntAddr", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipAdEntIfIndex", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.253",
-                "name": "ipAdEntAddr",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Out bits in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.3",
-        "key": "hh3cIfStatFlowOutBits",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowOutBits",
+        ], 
+        "help": "Out bits in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.3", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
-            }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowOutBits", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of network interfaces (regardless of their current state) present on this system. - 1.3.6.1.2.1.2.1",
-        "key": "ifNumber",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifNumber",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of network interfaces (regardless of their current state) present on this system. - 1.3.6.1.2.1.2.1", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ifNumber", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.12",
-        "key": "ipRouteMetric5",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMetric5",
+        "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
+            }
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.12", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMetric5", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The routing mechanism via which this route was learned - 1.3.6.1.2.1.4.21.1.9",
-        "key": "ipRouteProto",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteProto",
+        ], 
+        "help": "The routing mechanism via which this route was learned - 1.3.6.1.2.1.4.21.1.9", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteProto", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex"
+            }, 
+            {
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress"
+            }, 
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "A0:63:91:44:F7:94", 
+                "readOnly": false, 
+                "name": "ipNetToMediaPhysAddress"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The media-dependent `physical' address - 1.3.6.1.2.1.4.22.1.2",
-        "key": "ipNetToMediaPhysAddress",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipNetToMediaPhysAddress",
+        ], 
+        "help": "The media-dependent `physical' address - 1.3.6.1.2.1.4.22.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false,
+                "default": "30", 
+                "readOnly": false, 
+                "name": "ipNetToMediaIfIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false,
+                "default": "192.168.10.1", 
+                "readOnly": false, 
+                "name": "ipNetToMediaNetAddress", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "A0:63:91:44:F7:94",
-                "name": "ipNetToMediaPhysAddress",
-                "readOnly": false,
+                "default": "A0:63:91:44:F7:94", 
+                "readOnly": false, 
+                "name": "ipNetToMediaPhysAddress", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipNetToMediaPhysAddress", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "30",
-                "name": "ipNetToMediaIfIndex",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.1",
-                "name": "ipNetToMediaNetAddress",
-                "readOnly": false
-            },
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }, 
             {
-                "default": "A0:63:91:44:F7:94",
-                "name": "ipNetToMediaPhysAddress",
-                "readOnly": false
+                "default": "3C:E5:A6:80:E0:5A", 
+                "readOnly": false, 
+                "name": "ifPhysAddress"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The interface's address at its protocol sub-layer - 1.3.6.1.2.1.2.2.1.6",
-        "key": "ifPhysAddress",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifPhysAddress",
+        ], 
+        "help": "The interface's address at its protocol sub-layer - 1.3.6.1.2.1.2.2.1.6", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "3C:E5:A6:80:E0:5A",
-                "name": "ifPhysAddress",
-                "readOnly": false,
+                "default": "3C:E5:A6:80:E0:5A", 
+                "readOnly": false, 
+                "name": "ifPhysAddress", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifPhysAddress", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
-            },
             {
-                "default": "3C:E5:A6:80:E0:5A",
-                "name": "ifPhysAddress",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Out packets in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.5",
-        "key": "hh3cIfStatFlowOutPkts",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowOutPkts",
+        ], 
+        "help": "Out packets in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.5", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowOutPkts", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Total SNMP time scrape took (walk and processing).",
-        "key": "snmp_scrape_duration_seconds",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_snmp_scrape_duration_seconds",
-        "unit": "seconds",
-        "paramDefine": [],
-        "tagDefine": []
-    },
+        "tagDefine": [], 
+        "help": "Total SNMP time scrape took (walk and processing).", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "snmp_scrape_duration_seconds", 
+        "metric_type": "gauge", 
+        "unit": "seconds"
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "A reference to MIB definitions specific to the particular media being used to realize the interface - 1.3.6.1.2.1.2.2.1.22",
-        "key": "ifSpecific",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifSpecific",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }, 
+            {
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ifSpecific"
+            }
+        ], 
+        "help": "A reference to MIB definitions specific to the particular media being used to realize the interface - 1.3.6.1.2.1.2.2.1.22", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0.0",
-                "name": "ifSpecific",
-                "readOnly": false,
+                "default": "0.0", 
+                "readOnly": false, 
+                "name": "ifSpecific", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifSpecific", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
-            },
-            {
-                "default": "0.0",
-                "name": "ifSpecific",
-                "readOnly": false
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.4",
-        "key": "ipRouteMetric2",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipRouteMetric2",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.21.1.4", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipRouteDest", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipRouteMetric2", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "192.168.10.0",
-                "name": "ipRouteDest",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.12",
-        "key": "ipCidrRouteMetric2",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteMetric2",
+        ], 
+        "help": "An alternate routing metric for this route - 1.3.6.1.2.1.4.24.4.1.12", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteMetric2", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of inbound packets which were chosen to be discarded even though no errors had been detected to prevent their being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.13",
-        "key": "ifInDiscards",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ifInDiscards",
+        ], 
+        "help": "The number of inbound packets which were chosen to be discarded even though no errors had been detected to prevent their being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.13", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifInDiscards", 
+        "metric_type": "counter", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest"
+            }, 
+            {
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop"
+            }, 
+            {
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The Autonomous System Number of the Next Hop - 1.3.6.1.2.1.4.24.4.1.10",
-        "key": "ipCidrRouteNextHopAS",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipCidrRouteNextHopAS",
+        ], 
+        "help": "The Autonomous System Number of the Next Hop - 1.3.6.1.2.1.4.24.4.1.10", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false,
+                "default": "192.168.10.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteDest", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false,
+                "default": "255.255.255.0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteMask", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false,
+                "default": "192.168.10.253", 
+                "readOnly": false, 
+                "name": "ipCidrRouteNextHop", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false,
+                "default": "0", 
+                "readOnly": false, 
+                "name": "ipCidrRouteTos", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "192.168.10.0",
-                "name": "ipCidrRouteDest",
-                "readOnly": false
-            },
-            {
-                "default": "255.255.255.0",
-                "name": "ipCidrRouteMask",
-                "readOnly": false
-            },
-            {
-                "default": "192.168.10.253",
-                "name": "ipCidrRouteNextHop",
-                "readOnly": false
-            },
-            {
-                "default": "0",
-                "name": "ipCidrRouteTos",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ipCidrRouteNextHopAS", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The maximum number of seconds that received fragments are held while they are awaiting reassembly at this entity. - 1.3.6.1.2.1.4.13",
-        "key": "ipReasmTimeout",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ipReasmTimeout",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The maximum number of seconds that received fragments are held while they are awaiting reassembly at this entity. - 1.3.6.1.2.1.4.13", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipReasmTimeout", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The desired state of the interface - 1.3.6.1.2.1.2.2.1.7",
-        "key": "ifAdminStatus",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_ifAdminStatus",
-        "paramDefine": [
+        "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
-                "valueType": "string"
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "tagDefine": [
+        ], 
+        "help": "The desired state of the interface - 1.3.6.1.2.1.2.2.1.7", 
+        "data_type": "double", 
+        "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
+                "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "ifAdminStatus", 
+        "metric_type": "gauge", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The number of IPv4 datagrams that have been successfully fragmented at this entity - 1.3.6.1.2.1.4.17",
-        "key": "ipFragOKs",
-        "metric_type": "counter",
-        "name": "h3c_switch_collector_plugin_ipFragOKs",
-        "paramDefine": [],
-        "tagDefine": [],
+        "tagDefine": [], 
+        "help": "The number of IPv4 datagrams that have been successfully fragmented at this entity - 1.3.6.1.2.1.4.17", 
+        "data_type": "double", 
+        "paramDefine": [], 
+        "agentType": "prometheus", 
+        "key": "ipFragOKs", 
+        "metric_type": "counter", 
         "unit": ""
-    },
+    }, 
     {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "In bits in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.2",
-        "key": "hh3cIfStatFlowInBits",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowInBits",
+        "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
+            }
+        ], 
+        "help": "In bits in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.2", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowInBits", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
+            {
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex"
+            }, 
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "H3C Switch S5120-28P-LI", 
+                "readOnly": false, 
+                "name": "entPhysicalName"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "The textual name of the physical entity - 1.3.6.1.2.1.47.1.1.1.1.7",
-        "key": "entPhysicalName",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_entPhysicalName",
+        ], 
+        "help": "The textual name of the physical entity - 1.3.6.1.2.1.47.1.1.1.1.7", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "entPhysicalIndex", 
                 "valueType": "string"
-            },
+            }, 
             {
-                "default": "H3C Switch S5120-28P-LI",
-                "name": "entPhysicalName",
-                "readOnly": false,
+                "default": "H3C Switch S5120-28P-LI", 
+                "readOnly": false, 
+                "name": "entPhysicalName", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "entPhysicalName", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
-            {
-                "default": "1",
-                "name": "entPhysicalIndex",
-                "readOnly": false
-            },
             {
-                "default": "H3C Switch S5120-28P-LI",
-                "name": "entPhysicalName",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "In packets in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.4",
-        "key": "hh3cIfStatFlowInPkts",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowInPkts",
+        ], 
+        "help": "In packets in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.4", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowInPkts", 
+        "metric_type": "gauge", 
+        "unit": ""
+    }, 
+    {
         "tagDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex"
             }
-        ],
-        "unit": ""
-    },
-    {
-        "agentType": "prometheus",
-        "data_type": "double",
-        "help": "Out bytes in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.7",
-        "key": "hh3cIfStatFlowOutBytes",
-        "metric_type": "gauge",
-        "name": "h3c_switch_collector_plugin_hh3cIfStatFlowOutBytes",
+        ], 
+        "help": "Out bytes in the specified interval. - 1.3.6.1.4.1.25506.2.40.2.1.2.1.1.7", 
+        "data_type": "double", 
         "paramDefine": [
             {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false,
+                "default": "1", 
+                "readOnly": false, 
+                "name": "ifIndex", 
                 "valueType": "string"
-            }
-        ],
-        "tagDefine": [
-            {
-                "default": "1",
-                "name": "ifIndex",
-                "readOnly": false
             }
-        ],
+        ], 
+        "agentType": "prometheus", 
+        "key": "hh3cIfStatFlowOutBytes", 
+        "metric_type": "gauge", 
         "unit": ""
     }
 ]
